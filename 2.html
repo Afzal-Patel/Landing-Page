@@ -1,0 +1,251 @@
+ <!-- FIX COLOR SCHEME-->
+ <!-- FIX Accordian for center and right boxes-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>landing-page</title>
+        <!-- Manual CSS -->
+        <link href="2.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+    </head>
+
+    <style type="text/css">
+        /*!-- Background Color --> */
+        body { background: #99bbff !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+    </style>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark boxStyle1 ">
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo" style="width:40px;">
+            </a>
+
+            <!-- Nav Bar -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">View Services</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br> 
+
+        <!-- Search Bar -->
+        <div class="input-group md-form form-sm form-2 pl-0 justify-content-center boxStyle1">
+
+            <input class="form-control my-0 py-1 amber-border col-lg-3 " type="text" placeholder="Search for your Team" aria-label="Search">
+
+            <div class="input-group-append">
+                <button class="btn btn-dark" type="submit">&#x1f50d; Search</button> 
+            </div>
+
+        </div>
+
+        <!-- contains the three boxes-->
+        <section class="row h-100 mainContainer">
+
+            <!-- Left Box--> 
+            <div class="mx-auto boxStyle1"> 
+                <div class="card text-center cardStyle bg-secondary " >
+                    <div class="card-body centerObject">
+
+                        <h5 class="card-title breakLineAS "><b>Team - 1</b></h5>
+                        <hr class ="hairLineStyle"> 
+                        <p class = "breakLineAS"> <b><i>Available Services</i> </b> </p>
+                        <br>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary cardButtonStyle " data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" ><div class="cardText"><u> <b>ec2</b></u></div></button>
+                                        
+                                        <!--  if not a button use:  <a href="#" role="button" class="btn btn-primary cardButtonStyle " data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" ><div class="cardText"><u> <b>ec2</b></u></div></a>   -->
+
+                                    </h5>
+                                </div>
+
+                                <!--  add show class to open by default -->
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body instertTextColor">
+                                        insert text here ...
+                                    </div>
+                                </div>
+                            </div>
+                            <br>  <br> 
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary cardButtonStyle" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" ><div class="cardText"><b>s3</b></div></button>
+
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body instertTextColor">
+                                        insert text here ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Center Box--> 
+            <div class="mx-auto boxStyle1"> 
+                <div class="card text-center cardStyle bg-secondary " >
+                    <div class="card-body centerObject">
+
+                        <h5 class="card-title breakLineAS "><b>Team - 2</b></h5>
+                        <hr class ="hairLineStyle"> 
+                        <p class = "breakLineAS"> <b><i>Available Services</i> </b> </p>
+                        <br>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary cardButtonStyle " data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" ><div class="cardText"><u> <b>ec2</b></u></div></button>
+
+                                    </h5>
+                                </div>
+
+                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body instertTextColor">
+                                        insert text here ...
+                                    </div>
+                                </div>
+                            </div>
+                            <br>  <br> 
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary cardButtonStyle" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" ><div class="cardText"><b>s3</b></div></button>
+
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body instertTextColor">
+                                        insert text here ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right  Box--> 
+            <div class="mx-auto boxStyle1"> 
+                <div class="card text-center cardStyle bg-secondary " >
+                    <div class="card-body centerObject">
+
+                        <h5 class="card-title breakLineAS "><b>Team - 3</b></h5>
+                        <hr class ="hairLineStyle"> 
+                        <p class = "breakLineAS"> <b> <i>Available Services</i> </b> </p>
+                        <br>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary cardButtonStyle " data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" ><div class="cardText"><u> <b>ec2</b></u></div></button>
+
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordion">
+                                    <div class="card-body instertTextColor">
+                                        insert text here ...
+                                    </div>
+                                </div>
+                            </div>
+                            <br>  <br> 
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary cardButtonStyle" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" ><div class="cardText"><b>s3</b></div></button>
+
+                                    </h5>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                    <div class="card-body instertTextColor">
+                                        insert text here ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- spacing before footer-->
+        <br>
+
+
+
+        <!-- Footer Begining -->
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">footer ...</h5>
+                        <p>insert Text here...</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="..."> link </a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer End -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script> 
+    </body>
+</html>
